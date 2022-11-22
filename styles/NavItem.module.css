@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container a {
+    cursor: pointer;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.2s ease-in-out;
+    width: fit-content;
+    padding: .7em .7em;
+    gap: .5em;
+}
+
+.container a:hover, .container a:focus {
+    outline: none;
+    background-color: #ffffff22;
+}
+
+.container svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.container:last-child a {
+    background-color: rgb(26, 140, 216);
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: -4em;
+        margin-right: 1em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .container:nth-child(4) {
+        display: none;
+    }
+}

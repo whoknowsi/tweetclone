@@ -1,0 +1,96 @@
+.container {
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 20%;
+}
+.container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.container > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.avatarContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+.avatarContainer > div {
+    cursor: pointer;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.2s ease-in-out;
+    width: fit-content;
+    padding: .7em .7em;
+    gap: .5em;
+} 
+
+.avatarContainer > div:hover, .avatarContainer > div:focus {
+    background-color: #f2f2f222;
+    outline: none;
+}
+
+.avatarContainer p {
+    padding: 0px;
+    margin: 0px;
+    font-size: .8em;
+}
+
+.username {
+    color: #888;
+}
+
+/* mediaqueries */
+
+@media (max-width: 1300px) {
+    .container  a > span {
+        display: none;
+    }
+    .avatarContainer > div > div {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 0px;
+        padding: 0px;
+    }
+    .container  a > span {
+        display: none;
+    }
+    .container .nav {
+        background-color: #000;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 3em;
+        flex-direction: row;
+        border-top: solid 1px #333333;
+        gap: 0;
+        align-items: space-between;
+    }
+    .nav:last-child {
+        display: none;
+    }
+
+    .avatarContainer {
+        display: none;
+    }
+}

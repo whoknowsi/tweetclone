@@ -1,0 +1,27 @@
+.container {
+    background-color: #00000066;
+    height: 3em;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    position: fixed;
+    width: 600px;
+}
+
+.container h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        border: none;
+    }
+}

@@ -1,0 +1,84 @@
+.tweetsContainer {
+    padding-top: 3em;
+}
+
+.container {
+    display: flex;
+    padding: 1em 1em;
+    gap: .5em;
+    border-top: none;
+    width: 100%;
+    border: 1px solid #333;
+    border-top: none;
+
+}
+
+.tweetContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.header p {
+    padding: 0;
+    margin: 0;
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: .3em;
+}
+
+.header .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header .username,
+.dateTime,
+.point {
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header .point {
+    margin-left: .3em;
+}
+
+.mediaContainer {
+    margin-top: .5em;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1em;
+    border: solid .1px #333;
+    display: flex;
+}
+
+.mediaContainer img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        border: none;
+        border-bottom: 1px solid #333;
+    }
+    .tweetsContainer {
+        padding-bottom: 3em;
+    }
+
+}
